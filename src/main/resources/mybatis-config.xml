@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--配置日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--别名映射，以包为基准-->
+    <typeAliases>
+        <package name="com.cc.pojo"/>
+    </typeAliases>
+    <!--Dao接口的映射配置文件-->
+    <mappers>
+        <mapper resource="daoMapper/UserDaoMapper.xml"/>
+    </mappers>
+</configuration>
